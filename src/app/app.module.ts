@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BarchartComponent } from './components/barchart/barchart.component';
+import { PiechartComponent } from './components/piechart/piechart.component';
+import { PerformancechartComponent } from './components/performancechart/performancechart.component';
+import { DynamicchartComponent } from './components/dynamicchart/dynamicchart.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarchartComponent,
+    PiechartComponent,
+    PerformancechartComponent,
+    DynamicchartComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
