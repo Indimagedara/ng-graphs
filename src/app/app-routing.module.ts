@@ -6,6 +6,10 @@ import { PiechartComponent } from './components/piechart/piechart.component';
 import { PerformancechartComponent } from './components/performancechart/performancechart.component';
 import { DynamicchartComponent } from './components/dynamicchart/dynamicchart.component';
 import { GooglebarComponent } from './components/google/googlebar/googlebar.component';
+import { CanvasjsComponent } from './components/canvasjs/canvasjs.component';
+import { GoogleComponent } from './components/google/google.component';
+import { GooglepieComponent } from './components/google/googlepie/googlepie.component';
+import { GoogleareaComponent } from './components/google/googlearea/googlearea.component';
 
 
 const routes: Routes = [
@@ -14,7 +18,11 @@ const routes: Routes = [
   {path: 'pie', component: PiechartComponent},
   {path: 'performace', component: PerformancechartComponent},
   {path: 'dynamic', component: DynamicchartComponent},
-  {path: 'googlebar',component:GooglebarComponent}
+  {path: 'googlebar',component:GooglebarComponent},
+  {path: 'canvas', component: CanvasjsComponent},
+  {path: 'google', component: GoogleComponent},
+  {path: 'googlepie',component: GooglepieComponent},
+  {path: 'googlearea', component: GoogleareaComponent}
 ];
 
 @NgModule({

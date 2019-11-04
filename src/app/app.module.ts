@@ -11,6 +11,10 @@ import { HomeComponent } from './components/home/home.component';
 import { GooglebarComponent } from './components/google/googlebar/googlebar.component';
 
 import { GoogleChartsModule } from 'angular-google-charts';
+import { CanvasjsComponent } from './components/canvasjs/canvasjs.component';
+import { GoogleComponent } from './components/google/google.component';
+import { GooglepieComponent } from './components/google/googlepie/googlepie.component';
+import { GoogleareaComponent } from './components/google/googlearea/googlearea.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { GoogleChartsModule } from 'angular-google-charts';
     PerformancechartComponent,
     DynamicchartComponent,
     HomeComponent,
-    GooglebarComponent
+    GooglebarComponent,
+    CanvasjsComponent,
+    GoogleComponent,
+    GooglepieComponent,
+    GoogleareaComponent
   ],
   imports: [
     BrowserModule,
