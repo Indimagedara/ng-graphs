@@ -8,6 +8,9 @@ import { PiechartComponent } from './components/piechart/piechart.component';
 import { PerformancechartComponent } from './components/performancechart/performancechart.component';
 import { DynamicchartComponent } from './components/dynamicchart/dynamicchart.component';
 import { HomeComponent } from './components/home/home.component';
+import { GooglebarComponent } from './components/google/googlebar/googlebar.component';
+
+import { GoogleChartsModule } from 'angular-google-charts';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,13 @@ import { HomeComponent } from './components/home/home.component';
     PiechartComponent,
     PerformancechartComponent,
     DynamicchartComponent,
-    HomeComponent
+    HomeComponent,
+    GooglebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    GoogleChartsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

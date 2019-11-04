@@ -11,7 +11,7 @@ export class PiechartComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let canvas = new CanvasJS.Chart("chartContainer",{
+    let chart = new CanvasJS.Chart("chartContainer",{
       theme: "light2",
       animationEnabled: true,
       exportEnabled: true,
@@ -33,7 +33,8 @@ export class PiechartComponent implements OnInit {
           { y: 250, name: "Others" }
         ]
       }]
-    })
+    });
+    chart.render();
   }
 
 }
